@@ -12,18 +12,19 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : " _aqua _Sparky" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+locale                   : "zh-CN"
+title                    : "黄舒婷个人网站"
+title_separator          : "："
+name                     : "黄舒婷"
+description              : "使用Jekyll搭建的网站"
+url                      : "https://NFUNM030.gitee.io"
+baseurl                  : "/minimal-mistakes"
+repository               : "NFUNM030/minimal-mistakes"
+affiliation: "中山大学南方学院 <a href = 'http://newmedia.nfu.edu.cn/zh/'>网络与新媒体</a>黄舒婷 网页设计与制作期末项目作品 "
+teaser                   : "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -100,12 +101,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "黄舒婷"
+  avatar           : "/images/头像.png"
+  bio              : "网络与新媒体在读"
+  location         : "广东-广州"
   email            :
-  uri              :
+  uri              : "https://gitee.com/NFUNM030/"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -113,7 +114,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "kissbabysky"
   gitlab           :
   google_plus      :
   keybase          :
@@ -127,7 +128,7 @@ author:
   tumblr           :
   twitter          :
   vine             :
-  weibo            :
+  weibo            : 
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
@@ -188,7 +189,38 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+ 
+# Collections
+collections:
+  svg:
+    output: true
+    permalink: /:collection/:path/
 
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _svg
+  - scope:
+      path: ""
+      type: svg
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+      
+    
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -231,7 +263,7 @@ whitelist:
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /design/
 tag_archive:
   type: liquid
   path: /tags/
@@ -269,3 +301,5 @@ defaults:
       comments: # true
       share: true
       related: true
+
+      
