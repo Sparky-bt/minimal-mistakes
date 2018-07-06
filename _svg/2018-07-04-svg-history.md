@@ -1,7 +1,5 @@
 ---
-layout：archive
 title:  "SVG的历史"
-permalink: /svg/
 ---
  
 SVG允许在代码中使用矢量点来描述二维图像。  
