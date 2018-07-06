@@ -1,4 +1,5 @@
 ---
+layout: archive
 title:  "SVG的历史"
 ---
  
