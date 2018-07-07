@@ -210,6 +210,8 @@ defaults:
       comments: true
       share: true
       related: true
+      
+      
   # _svg
   - scope:
       path: ""
@@ -219,6 +221,14 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"  
       
     
 # Sass/SCSS
@@ -285,7 +295,7 @@ tag_archive:
 compress_html:
   clippings: all
   ignore:
-    envs: development
+    aenvs: development
 
 
 # Defaults
